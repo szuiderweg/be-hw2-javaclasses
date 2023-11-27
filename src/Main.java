@@ -6,17 +6,9 @@ public class Main
 
         taart.printIngredients();//print ingredients
         //print recept
-        taart.preheatOven();
-        taart.beatEgg();
-        taart.createDough();
-        taart.makeFilling();
-        taart.prepareCakePan();
-        taart.formCrust();
-        taart.fillCake();
-        taart.cutDecoration();
-        taart.decorateCake();
-        taart.bakeCake();
-        //todo bonus assignment 1
+        taart.printRecipe();
+
+        //done bonus assignment 1
         //todo bonus assignment 2
     }
 }
