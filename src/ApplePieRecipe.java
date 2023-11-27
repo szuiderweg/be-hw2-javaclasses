@@ -1,8 +1,7 @@
 public class ApplePieRecipe {
-    public void printIngredients() {// ingredients alle defined and printed using the Ingredientclass
-        //todo extra: ingredienten in een arraylist zetten en laten printen
+    public void printIngredients() {// ingredients are all defined and printed using the Ingredientclass
+        //done: abandoned idea of creating list, takes too much time and is out of scope of assignment
         //done:  print "ingrediënten" as a heading above the list of ingredients
-        //define ingredients
         var roomboter = new Ingredient(200, "gram", "ongezouten roomboter");
         var basterdSuiker = new Ingredient(200, "gram", "witte basterdsuiker");
         var bakmeel = new Ingredient(400, "gram", "zelfrijzend bakmeel");
@@ -26,6 +25,7 @@ public class ApplePieRecipe {
         System.out.print(suiker.getAmount() + " " + suiker.getUnit() + " " + suiker.getName() + "\n");
         System.out.print(kaneel.getAmount() + " " + kaneel.getUnit() + " " + kaneel.getName() + "\n");
         System.out.println(paneermeel.getAmount() + " " + paneermeel.getUnit() + " " + paneermeel.getName() + "\n");
+
     }
 
     //done: bonus assignment 1: collect all steps in one printmethod
@@ -41,6 +41,7 @@ public class ApplePieRecipe {
         cutDecoration();
         decorateCake();
         bakeCake();
+        System.out.println("~~~~");
     }
 
     public void preheatOven() {
@@ -80,7 +81,7 @@ public class ApplePieRecipe {
     }
 
     public void bakeCake() {
-        System.out.print("Zet de taart iets onder het midden van de oven. Bak de taart in 60 minuten op 170 graden Celsius (boven en onderwarmte) gaar en goudbruin.\n");
+        System.out.println("Zet de taart iets onder het midden van de oven. Bak de taart in 60 minuten op 170 graden Celsius (boven en onderwarmte) gaar en goudbruin.\n");
     }
 
 }
